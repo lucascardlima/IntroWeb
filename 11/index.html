@@ -8,9 +8,6 @@
         body{
             clear: both;
         }
-        footer{
-            font-size: 10px;
-        }
         .menu{
             background: #ffffff;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,28 +26,40 @@
         }
         nav{
             position: absolute;
-            width: 25%;
+            width: 20%;
             top: 15%;
             left: 0%;
-            right: 75%;
+            right: 80%;
             text-align: left;
             padding: 10px;
         }
         article{
             position: absolute;
-            width: 50%;
+            width:60%;
             top: 15%;
-            left: 25%;
-            right: 25%;
+            left: 20%;
+            right: 20%;
             text-align: center;
+            align-items: center;
+            align-content: center;
         }
         aside{
             position: absolute;
-            width: 25%;
+            width: 20%;
             top: 15%;
-            left: 75%;
+            left: 80%;
             right: 0%;
             text-align: center;
+        }
+        footer{
+            font-size: 10px;
+        }
+        .rodape{
+            position: absolute;
+            width: 100%;
+            top: 90%;
+            text-align: center;
+            font-size: 8px;
         }
         .logo{
             width: 100px;
@@ -68,44 +77,62 @@
         }
         .header{
             text-align: center;
-            color: #0e0370;
+            color: black;
         }
         .noticia{
             font-family: 'opensans-regular', Arial, sans-serif;
             color: #333;
             
             text-align: left;
+            align-items: center;
+            align-content: center;
             font-size: 14px;
             padding: 5px;
             margin: 10px;
-            width: 300px;
+            width: 45%;
             float: left;
+        }
+        .propaganda{
+            padding-top: 20px;
         }
         .imagem-noticia{
             width: 180px;
             border-radius: 20px;
             padding: 10px;
-            float: right;
+            float: left;
         }
-        .logo-noticia{
-            width: 15px;
+        .imagem-propaganda{
+            width: 100px;
         }
-        .logo-noticia-terra{
+        .logo-propaganda{
+            width: 70px;
+        }
+        .logo-rodape{
             width: 50px;
         }
-        .logo-noticia-cnn{
-            width: 25px;
+        .text-rodape{
+            font-size: 10px;
         }
         p{
-            font-size: 16px;
-            
+            font-size: 16px;   
+        }
+        footer{
+            padding-top: 10px;
+        }
+        #subtitle{
+            font-size: 10px;
+        }
+        #title-news{
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(96, 15, 209);
         }
         a:link{
-            color:#9fc1fb;
+            color: black;
             text-decoration: none;
         }
         a:visited{
-            color: #48b7f7;
+            color: black;
         }
         a:hover{
             color: #3500a8;
@@ -123,21 +150,110 @@
         </div>    
     </header>
     <nav>
-        <h1>Editorias<h1>
-        <h1>Jogos<h1>
-        <h1>Guias de Compras<h1>
-        <h1>Regiões<h1>
-
+        <a href="#" ><h1>Planeta<h1></h1></a>
+        <a href="#" ><h1>Apostas<h1></h1></a>
+        <a href="#" ><h1>Esportes<h1></h1></a>
+        <a href="#" ><h1>Futebol<h1></h1></a>
+        <a href="#" ><h1>Entretenimento</h1></a>
+        <a href="#" ><h1>Clima</h1></a>
+        <a href="#" ><h1>Horóscopo</h1></a>
+        <a href="#" > <h1>Bolsa de Valores</h1></a>
+        <a href="#" ><h1>Educação</h1></a>
+        <a href="#" ><h1>Cinema</h1></a> 
     </nav>
     <article>
-        Noticias
+        <header class="header">
+            <h1>Notícias</h1>
+        </header>
+        <section>
+            <div class="noticia">
+                <header id="title-news">
+                   Drogas e Morte 
+                </header>
+                <p id="subtitle">11 abr 2024 - 12h37 (atualizado às 12h53)</p>
+                <img class="imagem-noticia" src="https://p2.trrsf.com/image/fget/cf/1242/834/0/0/306/168/images.terra.com/2024/04/11/captura-de-tela-2024-04-11-as-12-33-01-t4qnltsy15iw.png">
+                
+                <p>
+                    Morte de 13 presos é investigada após suspeita de overdose de drogas K
+                </p>
+                <footer>
+                    Postado por Maria Vítoria Batista
+                </footer>
+                
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                <header id="title-news">
+                    Indenização
+                </header>
+                <p id="subtitle">11 abr 2024 - 16h40 (atualizado às 17h53)</p>
+                <img class="imagem-noticia" src="https://s2-g1.glbimg.com/myty2i4vf_4JM2DtpQ-QLA6UFNs=/0x133:4000x2383/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/8/o/vjCQ45Qsi4DniiRA1uBQ/tn220220119007.jpg">
+                <p>
+                    STF define que Estado deve indenizar famílias de vítimas de tiroteios em ações policiais
+                </p>
+                <footer>
+                    Postado por Luana Maria Oliveira
+                </footer>
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                
+                <header id="title-news">
+                    Política
+                </header>
+                <p id="subtitle"> 11 abr 2024 - 16h40 (atualizado às 17h53)</p>
+                <img class="imagem-noticia" src="https://conteudo.imguol.com.br/c/home/2f/2024/04/04/o-presidente-lula-em-lancamento-do-plano-de-juventude-negra-viva-em-ceilandia-1712249095714_v2_300x225.jpg.webp">
+                <p>
+                    Lula veta parte de PL e mantém saidinha de presos para visita a familiares, diz ministro
+                </p>
+                <footer>
+                   Postado por André Vinícius da Cunha
+                </footer>
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                <header id="title-news">
+                    Fraude
+                </header>
+                <p id="subtitle">11 abr 2024 - 16h40 (atualizado às 17h53)</p>
+                <img class="imagem-noticia" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/04/2024-04-11T134216Z_1_LOP446711042024RP1_RTRMADP_BASEIMAGE-960X540_VIETNAM-FINANCE-TRIAL-1.jpg?w=390&h=219&crop=1">
+                <p>
+                    Magnata do Vietnã é condenada à morte em caso de fraude bilionária
+                </p>
+                <footer>
+                    Postado por Ana Luiza Pereira
+                </footer>
+            </div>
+        </section>
     </article>
-    <header class="header">
-        <h1>Notícias</h1>
-    </header>
+    
     <aside>
-        Propagandas
+        <section>
+            <a href="#"><div class="propaganda">
+                <img class="imagem-propaganda" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUtAnYbEynscBZmOuVgcow3r4uq9sf3zhQQ&s">
+                <div class="container">
+                    <h4>Promoção    4 x R$20,00</h4>
+                    <img class="logo-propaganda" src="data:image/png;base64,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">
+                </div>
+            </div></a>
+        </section>
+        <section>
+            <a href="#"><div class="propaganda">
+                <img class="imagem-propaganda" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8EGdvgjW6YgAFAnXBiXFAka2zK_HNh5PUXA&s">
+                <div class="container">
+                    <h4>Promoção    12 x R$300,00</h4>
+                    <img class="logo-propaganda" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVPZAsV8_miLURH4cLR24YSecIRhrMEeXoSg&s">
+                </div>
+            </div></a>
+        </section>
     </aside>
+    <footer class="rodape">
+        <p class="text-rodape">1996-2024 Break News - Universo Online. Todos os direitos reservados. Segurança e privacidade</p>
+        <img class="logo-rodape" src="imagem/360_F_583342356_OE57DmNMJ1wCzwavInyGYzT6Mdg5lUz3-removebg-preview.png">
+    </footer>
     
 </body>
 </html>
