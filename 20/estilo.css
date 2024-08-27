@@ -9,11 +9,11 @@
 
     .bg-red-white-text .nav-link:hover {
         color: white;
-        background-color: black;
+        
     }
 
     .bg-red-white-text .nav-link {
-        color: white;
-        padding: 30px 40px; /* Ajuste o padding para cobrir a altura da navbar */
+        color: whitesmoke;
+        padding: 10px 60px; /* Ajuste o padding para cobrir a altura da navbar */
         transition: background-color 0.3s ease, color 0.3s ease;
     }
