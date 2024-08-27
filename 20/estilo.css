@@ -12,8 +12,7 @@
         
     }
 
-    .bg-red-white-text .nav-link {
-        color: whitesmoke;
-        padding: 10px 60px; /* Ajuste o padding para cobrir a altura da navbar */
-        transition: background-color 0.3s ease, color 0.3s ease;
+    .navbar-nav .nav-link:hover {
+        background-color: #000000; /* Preto */
+        color: #ffffff; /* Branco */
     }
