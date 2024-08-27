@@ -1,0 +1,34 @@
+.conteudo{
+    background: #DCDCDC;
+}
+
+.linha{
+    background: #FFEBCD;
+    
+}
+
+.coluna{
+    background: #fbfdfe;
+    
+}
+
+.imagem1{
+    width: 100%;
+    height: 100%;
+}
+
+.imagem2{
+    width: 100%;
+    height: 100%;
+    padding: 10px;  
+}
+
+.imagem3{
+    width: 100%;
+    height: 100%;
+}
+
+.imagem4{
+    width: 100%;
+    height: 100%;
+}
