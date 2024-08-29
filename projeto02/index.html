@@ -32,9 +32,19 @@
         </div>
 
         <div class="mb-4">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row pesquisar">
+                <div class="col-md-10">
                     <h4>Pesquisa de Produtos</h4>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <button type="button" class="btn btn-default btn-sm mr-2">
+                            <i class="fas fa-window-minimize"></i>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <form id="searchForm">
@@ -46,13 +56,13 @@
                 </div>
                 <div class="form-row">   
                     <div class="form-group col-md-6 d-flex align-items-end">
-                        <button type="button" class="btn btn-primary mr-2" onclick="pesquisar()">
+                        <button type="button" class="btn btn-primary mr-2">
                             <i class="fas fa-search"></i> Pesquisar
                         </button>
                         <button type="reset" class="btn btn-secondary mr-2">
                             <i class="fas fa-sync"></i> Recarregar
                         </button>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newProductModal">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#novoproduto">
                             <i class="fas fa-plus-circle"></i> Novo
                         </button>
                     </div>
@@ -63,8 +73,8 @@
 
         <div class="d-flex justify-content-between align-items-center mb-2">
             <div>
-                <label for="recordsPerPage">Registros por página:</label>
-                <select id="recordsPerPage" class="form-control d-inline-block w-auto">
+                <label for="numeroporpagina">Registros por página:</label>
+                <select id="numeroporpagina" class="form-control d-inline-block w-auto">
                     <option value="5">5</option>
                     <option value="10" selected>10</option>
                     <option value="20">20</option>
@@ -72,7 +82,7 @@
                 </select>
             </div>
             <div>
-                <input type="text" id="tableSearch" class="form-control" placeholder="Buscar na tabela">
+                <input type="text" class="form-control" placeholder="Buscar na tabela">
             </div>
         </div>
 
@@ -87,7 +97,7 @@
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody id="productTable">
+                <tbody id="produtos">
                     <tr>
                         <td>1</td>
                         <td>Pizza</td>
@@ -99,7 +109,7 @@
                             <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
                                 <i class="fas fa-edit"></i>
                             </button>
-                            <button class="btn btn-sm btn-light text-primary" data-toggle="tooltip" data-placement="top" data-target="#confirmDeleteModal" title="Excluir">
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-placement="top" data-target="#deletar" title="Excluir">
                                 <i class="fas fa-trash"></i>
                             </button>
                         </td>
@@ -115,7 +125,7 @@
                             <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
                                 <i class="fas fa-edit"></i>
                             </button>
-                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#confirmDeleteModal" title="Excluir">
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#deletar" title="Excluir">
                                 <i class="fas fa-trash"></i>
                             </button>
                         </td>
@@ -131,7 +141,7 @@
                             <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
                                 <i class="fas fa-edit"></i>
                             </button>
-                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#confirmDeleteModal" title="Excluir">
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#deletar" title="Excluir">
                                 <i class="fas fa-trash"></i>
                             </button>
                         </td>
@@ -147,7 +157,7 @@
                             <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
                                 <i class="fas fa-edit"></i>
                             </button>
-                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#confirmDeleteModal" title="Excluir">
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#deletar" title="Excluir">
                                 <i class="fas fa-trash"></i>
                             </button>
                         </td>
@@ -157,11 +167,11 @@
         </div>
 
 
-        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deletar" tabindex="-1" aria-labelledby="deletarLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="confirmDeleteModalLabel">Deseja realmente remover esse registro?</h5>
+                        <h5 class="modal-title" id="deletarLabel">Deseja realmente remover esse registro?</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -178,11 +188,11 @@
             </div>
         </div>
 
-        <div class="modal fade" id="newProductModal" tabindex="-1" aria-labelledby="newProductModalLabel" aria-hidden="true">
+        <div class="modal fade" id="novoproduto" tabindex="-1" aria-labelledby="novoprodutoLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="newProductModalLabel">Novo Produto</h5>
+                        <h5 class="modal-title" id="novoprodutoLabel">Novo Produto</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -190,16 +200,16 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="productName">Nome</label>
-                                <input type="text" class="form-control" id="productName" placeholder="Digite o nome do produto">
+                                <label for="nomeproduto">Nome</label>
+                                <input type="text" class="form-control" id="nomeproduto" placeholder="Digite o nome do produto">
                             </div>
                             <div class="form-group">
-                                <label for="productPrice">Preço</label>
-                                <input type="text" class="form-control" id="productPrice" placeholder="Digite o preço do produto">
+                                <label for="precoproduto">Preço</label>
+                                <input type="text" class="form-control" id="precoproduto" placeholder="Digite o preço do produto">
                             </div>
                             <div class="form-group">
-                                <label for="productCategory">Categoria</label>
-                                <select class="form-control" id="productCategory">
+                                <label for="produtocategoria">Categoria</label>
+                                <select class="form-control" id="produtocategoria">
                                     <option>Selecione uma categoria</option>
                                     <option>Alimentos</option>
                                     <option>Bebidas</option>
@@ -207,8 +217,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="productStatus">Situação</label>
-                                <select class="form-control" id="productStatus">
+                                <label for="statusproduto">Situação</label>
+                                <select class="form-control" id="statusproduto">
                                     <option>Ativo</option>
                                     <option>Inativo</option>
                                 </select>
