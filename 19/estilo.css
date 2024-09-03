@@ -9,6 +9,9 @@
     box-sizing: border-box;
 
 }
+.container{
+    padding-top: 30px;
+}
 
 .row{
     justify-content: space-around;
@@ -44,3 +47,9 @@
 .follow-btn:hover {
     background-color: #0056b3;
 }
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
