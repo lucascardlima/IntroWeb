@@ -1,18 +1,12 @@
-.bg-red-white-text {
-    background-color: red;
-    color:white;
+.navbar-nav .nav-link:hover {
+        background-color: #000000;
 }
-.bg-red-white-text .navbar-brand,
-    .bg-red-white-text .nav-link {
-        color: white;
-    }
 
-    .bg-red-white-text .nav-link:hover {
-        color: white;
-        
-    }
+.login{
+    padding: 20px;
+}
 
-    .navbar-nav .nav-link:hover {
-        background-color: #000000; /* Preto */
-        color: #ffffff; /* Branco */
-    }
+h6{
+    padding: 10px;
+    padding-bottom: 10px;
+}
