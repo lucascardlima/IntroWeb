@@ -1,6 +1,9 @@
 .descricao{
-    font-size: 25px;
+    font-size: 22px;
     text-align: justify;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -10,22 +13,22 @@
 }
 
 a.card-link {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: inherit; /* Mantém a cor padrão do card */
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .card {
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
-    background-color: #ffffff; /* Cor de fundo do card */
-    border: 1px solid #dee2e6; /* Borda padrão do card */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+    background-color: #ffffff; 
+    border: 1px solid #dee2e6; 
 }
 
 .card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do card em 5% ao passar o mouse */
-    background-color: #abcef1; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
+    transform: scale(1.05); 
+    background-color: #abcef1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .card-body {
-    background-color: inherit; /* Garante que a cor de fundo do corpo do card herde a cor do card */
+    background-color: inherit; 
 }
