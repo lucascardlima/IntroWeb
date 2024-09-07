@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 21</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="container text-center">
+        <h3>Alertas</h3>
+        <div>
+            <div class="alert alert-success alert-dismissible fade show text-start" role="alert">
+                <strong>Success!</strong> You should <a href="#" class="alert-link">read this messager</a>.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-info alert-dismissible fade show text-start">
+                <strong>Info!</strong> Indicates a neutral informative change or action.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-warning alert-dismissible fade show text-start">
+                <strong>Warning!</strong> Indicates a warning that might need attention.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show text-start">
+                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        
+        <div class="container mb-4 mt-5">
+            <h3>Tooltips</h3>
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Detalhes do item">Dica</button>
+
+            <div class="row mt-4">
+                <div>
+                    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Play"><i class="fa-solid fa-play"></i></button>
+                    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Pause"><i class="fa-solid fa-pause"></i></button>
+                    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Stop"><i class="fa-solid fa-stop"></i></button>
+                 </div>   
+            </div>
+        </div>
+        
+        <div class="container mt-3">
+            
+            <h3>Popover</h3>
+
+            <button type="button" class="btn btn-lg btn-danger mt-4" data-bs-toggle="popover" title="Detalhes!!" data-bs-content="Breve detalhes aqui!" data-placement="right" data-trigger="focus">Detalhes</button>
+        
+        </div>
+
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function () {
+            $(".alert .btn-close").on("click", function () {
+                $(this).closest('.alert').fadeOut(500, function () {
+                    $(this).remove(); // Remove o alerta após o fade out
+                });
+            });
+        });
+    </script>
+    <script type="text/javaScript">
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl){
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        var popoverTriggerList=[].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
+        var popoverList=popoverTriggerList.map(function(popoverTriggerEl){
+            return bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+    
+</body>
+</html>

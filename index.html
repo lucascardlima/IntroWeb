@@ -1,334 +1,358 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Início</title>
-    </head>
-    <body>
-        <div class="fixo">
-            <div class="cabecalho">
-                <div class="menu">
-                    <a href="index.html">Home</a>
-                </div>
-                
-                <div class="imagem">
-                    <img src="Lucas Terno.jpg" alt="Foto do Aluno">
-                </div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Lucas Cardoso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Programação Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#atividade">Atividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                </ul>
             </div>
-           
-            <div class="aboutme">
-                <div class="nome">
-                    <h1>Lucas Cardoso Lima</h1>
+        </div>
+    </nav>
+
+    <!-- Conteúdo das seções -->
+    <section id="inicio">
+        <img class="img-fluid w-100 height-auto" src="https://www.mundoconectado.com.br/wp-content/uploads/2022/05/capa-programacao.jpg">
+    </section>
+
+    <section id="sobre">
+        <div class="row bg-gradient-info">
+            <div class="col-md-8 mt-5">
+                <div class="row container text-center">
+                    <h1>Sobre<h1></h1>
                 </div>
-                
-                <div class="descricao">
-                    <p>
-                    Estudante de Licenciatura em Computação no Instituto Federal do Piauí - Campus Zona Sul<br>
-                    Esta página está sendo desenvolvida como proposta da disciplina Introdução a Programação Web ministrada pelo Docente Msc. Jefferson de Sousa Silva<br>
-                    As atividade abaixo tem como objetivo:<br>
-                    - Estruturar documentos web usando as linguagens HTML;<br>
-                    - Utilizar as melhores práticas – web standards – relacionadas pelo W3C;<br>
-                    - Formatar a apresentação de documentos web utilizando CSS;<br>
-                    - Programar recursos da página utilizando javascript;<br>
-                    - Criar Sites Responsivos<br>
+                <div class="row container descricao">
+                    <p class="text-justify">
+                        Sou estudante de Licenciatura em Computação pelo Instituto Federal do Piauí - Campus Zona Sul.
                     </p>
+                    <p class="text-justify">
+                        Esta página está sendo desenvolvida como parte da disciplina <strong>Introdução à Programação Web</strong>, orientada pelo professor <strong>Msc. Jefferson de Sousa Silva</strong>. O objetivo deste projeto é aplicar os seguintes conceitos:
+                    </p>
+                    <ul>
+                        <li>Estruturar documentos web utilizando HTML;</li>
+                        <li>Adotar as melhores práticas recomendadas pelo W3C (Web Standards);</li>
+                        <li>Estilizar e organizar visualmente as páginas usando CSS;</li>
+                        <li>Programar funcionalidades interativas com JavaScript;</li>
+                        <li>Desenvolver sites responsivos, adaptados a diferentes dispositivos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid img-thumbnail rounded" src="Lucas Terno.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="atividade">
+        <div class="row mt-5 mb-4 text-center">
+        <h1>Atividades</h1>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Card Clicável -->
+                <div class="col-md-4 mb-4">
+                    <a href="01" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 1</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização da Tag anchor para a referenciação de recurso internos ou externos. E também a organização do repositório em pastas.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Repetir os cards conforme necessário -->
+                <div class="col-md-4 mb-4">
+                    <a href="02" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 2</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de mais Tags HTML e atributos de Tags para o destaque de textos, divisões de seções, listagem itens, numeração de itens e imagem.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="03" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 3</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de tabelas por meio da tag table, evidenciação do cabeçalho da tabela, mesclar linhas e colunas e ajuste de bordas, linhas, colunas e células.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="04" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 4</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização da Tag form para a criação de formulários que contém elementos que permitem ao usuário entrar com informações, como: campos de texto, menus drop-down, botões radiais, caixas de seleção.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="05" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 5</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de CSS (Cascading Style Sheets) para adicionar estilos (cor, fontes, espaçamento, etc.) a um documento web.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="06" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 6</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização das tags div e span na criação de divisões lógicas e estruturais de páginas, e conteiner inline para conteúdos fraseados.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="07" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 7</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de Família de Fonte, Propriedade Font-size e Propriedade Font-style.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="08" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 8</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de Box Model, ou seja, tags estilizadas que se comportam como caixas.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="09" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 9</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de propriedades de posicionamento do CSS que tem como utilidade ampliar as possibilidades de um layout.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="10" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 10</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização das novas tags (nav, header, footer) para maior eficiência e lógica para estruturar um site em HTML5.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="11" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 11</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização das novas tags (article, section e aside) para maior eficiência e lógica para estruturar um site em HTML5.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="12" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 12</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização do atributo Data para costumização de dados.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="13" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 13</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização do normalize CSS, uso do CSS3, Propriedade border-radius e propriedade box-sizing.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="14" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 14</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de sombras, box-shadow e gradiente.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="15" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 15</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de transição e animação usando CSS.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+                <div class="col-md-4 mb-4">
+                    <a href="16" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 16</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de Design Responsivo, Media Types, CSS Media Queries e Bootstrap.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+                <div class="col-md-4 mb-4">
+                    <a href="17" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 17</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização do Sistema Grid.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="18" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 18</h5>
+                                <p class="card-text text-justify">Atividade voltada para a construção de Formulários e Tabelas usando o Bootstrap.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="19" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 19</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de Botões e Imagens Responsivas usando o Bootstrap.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="20" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 20</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de NavBar e Janelas modais usando o Bootstrap.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="21" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 21</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de alert, tooltip e popover usand o Bootstrap.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="22" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 22</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de JavaScript no desenvolvimento de páginas de websites.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="23" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Atividade 23</h5>
+                                <p class="card-text text-justify">Atividade voltada para a utilização de JavaScript para manipulação de Arrays.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             
-            
-            <div class="titulo">
-                <h2>Atividades Desenvolvidas</h2>
-            </div>
+           
         </div>
-        
-       
-        <div class="atividade01">
-            <h3>Atividade 01</h3>
-            <p>Atividade voltada para a utilização da Tag anchor para a referenciação de recurso internos ou externos. E também a organização do repositório em pastas.</p>
-            <div class="link">
-            <a href="01" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-    
-        <div class="atividade01">
-            <h3>Atividade 02</h3>
-            <p>Atividade voltada para a utilização de mais Tags HTML e atributos de Tags para o destaque de textos, divisões de seções, listagem itens, numeração de itens e imagem.</p>
-            <div class="link">
-            <a href="02" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
+        </div>
+    </section>
 
-        <div class="atividade01">
-            <h3>Atividade 03</h3>
-            <p>Atividade voltada para a utilização de tabelas por meio da tag table, evidenciação do cabeçalho da tabela, mesclar linhas e colunas e ajuste de bordas, linhas, colunas e células.</p>
-            <div class="link">
-            <a href="03" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
+    <section id="projetos">
+        <div class="row mt-5 mb-4 text-center">
+        <h1>Projetos</h1>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Card Clicável -->
+                <div class="col-md-4 mb-4">
+                    <a href="projeto01/index.html" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Projeto 1</h5>
+                                <p class="card-text text-justify">Projeto voltado para utilização de todos os conteúdos vistos anteriormente.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="projeto02/index.html" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Projeto 2</h5>
+                                <p class="card-text text-justify">Projeto voltado para utilização de todos os conteúdos vistos anteriormente.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="" class="card-link">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Projeto 3</h5>
+                                <p class="card-text text-justify">Projeto voltado para utilização de todos os conteúdos vistos anteriormente.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+        </div>
+    </section>
 
-        <div class="atividade01">
-            <h3>Atividade 04</h3>
-            <p>Atividade voltada para a utilização da Tag form para a criação de formulários que contém elementos que permitem ao usuário entrar com informações, como: campos de texto, menus drop-down, botões radiais, caixas de seleção.</p>
-            <div class="link">
-            <a href="04" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-
-        <div class="atividade01">
-            <h3>Atividade 05</h3>
-            <p>Atividade voltada para a utilização de CSS (Cascading Style Sheets) para adicionar estilos (cor, fontes, espaçamento, etc.) a um documento web.</p>
-            <div class="link">
-            <a href="05" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-
-        <div class="atividade01">
-            <h3>Projeto 01</h3>
-            <p>Projeto voltado para utilização de todos os conteúdos vistos anteriormente.</p>
-            <div class="link">
-            <a href="projeto01/index.html" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-
-        <div class="atividade01">
-            <h3>Atividade 06</h3>
-            <p>Atividade voltada para a utilização das tags div e span na criação de divisões lógicas e estruturais de páginas, e conteiner inline para conteúdos fraseados</p>
-            <div class="link">
-            <a href="06" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-
-        <div class="atividade01">
-            <h3>Atividade 07</h3>
-            <p>Atividade voltada para a utilização de Família de Fonte, Propriedade Font-size e Propriedade Font-style.</p>
-            <div class="link">
-            <a href="07" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-        <div class="atividade01">
-            <h3>Atividade 08</h3>
-            <p>Atividade voltada para a utilização de Box Model, ou seja, tags estilizadas que se comportam como caixas.</p>
-            <div class="link">
-            <a href="08" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 09</h3>
-            <p>Atividade voltada para a utilização de propriedades de posicionamento do CSS que tem como utilidade ampliar as possibilidades de um layout.</p>
-            <div class="link">
-            <a href="09" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 10</h3>
-            <p>Atividade voltada para a utilização das novas tags (nav, header, footer) para maior eficiência e lógica para estruturar um site em HTML5.</p>
-            <div class="link">
-            <a href="10" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 11</h3>
-            <p>Atividade voltada para a utilização das novas tags (article, section e aside) para maior eficiência e lógica para estruturar um site em HTML5.</p>
-            <div class="link">
-            <a href="11" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 12</h3>
-            <p>Atividade voltada para a utilização do atributo Data para costumização de dados.</p>
-            <div class="link">
-            <a href="12" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 13</h3>
-            <p>Atividade voltada para a utilização do normalize CSS, uso do CSS3, Propriedade border-radius e propriedade box-sizing.</p>
-            <div class="link">
-            <a href="13" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 14</h3>
-            <p>Atividade voltada para a utilização de sombras, box-shadow e gradiente.</p>
-            <div class="link">
-            <a href="14" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 15</h3>
-            <p>Atividade voltada para a utilização de transição e animação usando CSS.</p>
-            <div class="link">
-            <a href="15" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 16</h3>
-            <p>Atividade voltada para a utilização de Design Responsivo, Media Types, CSS Media Queries e Bootstrap.</p>
-            <div class="link">
-            <a href="16" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 17</h3>
-            <p>Atividade voltada para a utilização do Sistema Grid.</p>
-            <div class="link">
-            <a href="17" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 18</h3>
-            <p>Atividade voltada para a construção de Formulários e Tabelas usando o Bootstrap.</p>
-            <div class="link">
-            <a href="18" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-        <div class="atividade01">
-            <h3>Atividade 19</h3>
-            <p>Atividade voltada para a utilização de Botões e Imagens Responsivas usando o Bootstrap.</p>
-            <div class="link">
-            <a href="19" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-
-        <div class="atividade01">
-            <h3>Atividade 20</h3>
-            <p>Atividade voltada para a utilização de NavBar e Janelas modais usando o Bootstrap.</p>
-            <div class="link">
-            <a href="20" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div>
-
-        <div class="atividade01">
-            <h3>Projeto 02</h3>
-            <p>Projeto voltado para utilização de todos os conteúdos vistos anteriormente.</p>
-            <div class="link">
-            <a href="projeto02/index.html" target="_blank">
-                <p>Clique aqui</p>            
-            </a>
-            </div>
-        </div> 
-    </body>
-    <style>
-        body{
-            background-color: lightgrey;
-        }
-        .fixo{
-            text-align: center;
-        }
-        .cabecalho{
-            background-color: lightskyblue;
-        }
-        .menu{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .imagem > img{
-            width: 10%;
-            align-items: center;
-            align-content: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-radius: 10%;
-        }
-        .aboutme{
-            background-color: whitesmoke;
-            border-radius: 1cm;
-            margin-left: 300px;
-            margin-right: 300px;
-        }
-        .descricao > p{
-            text-align: justify;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            padding-right: 10px;
-            font-size: 20px;
-        }
-        .nome > h1{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-align: center;
-            font-size: 40px;
-            padding-top: 10px;
-        }
-        .titulo > h2{
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            font-size: 30px;
-        }
-        .atividade01{
-            background-color: whitesmoke;
-            border-radius: 1cm;
-            margin-left: 30%;
-            
-            margin-right: 30%;
-        }
-        .atividade01 > p{
-            padding: 20px;
-            padding-top: 0px;
-            text-align: justify;
-        }
-        .atividade01 > h3{
-            padding-top: 10px;
-            font-size: 25px;
-            text-align: center;
-        }
-        .atividade01 > a{
-            text-align: center;
-        }
-
-        .atividade{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-           align-items: center;
-           padding: 10px;
-        }
-        .link{
-            text-align: center;
-            padding-bottom: 5px;
-        }
-    </style>
+    <!-- Link do JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
