@@ -4,6 +4,11 @@
 
 }
 
+.imagem {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
 a.card-link {
     text-decoration: none; /* Remove o sublinhado do link */
     color: inherit; /* Mantém a cor padrão do card */
