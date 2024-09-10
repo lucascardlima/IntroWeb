@@ -2,18 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-#containerFrutas {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+
+.titulo{
+    text-align: center;
 }
 
-#containerLinguagem {
+.linguagens {
+    text-align: center;
     margin-top: 20px;
-    padding: 10px;
+    padding: 40px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
+    box-sizing: content-box;
+
+}
+
+.frutas {
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: content-box;
+
 }
 
 ul {
@@ -25,4 +36,20 @@ ul li {
 }
 p{
     margin-top: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+}
+
+.boxes{
+    padding: 40px;
 }
