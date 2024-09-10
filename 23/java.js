@@ -8,14 +8,12 @@ liguagens[4] = 'Perl';
 liguagens[5] = 'Ruby on Rails';
 liguagens[6] = 'C ++';
 
-
 function criaListaLiguagens(){
   const container = document.getElementById('container');
    liguagens.forEach(function(item,index) {
     container.innerHTML += (index) +  ' - ' +item+'<br>'
   });    	 
 }
-
 
 function posicaoLiguagens(){
 var indice = prompt('Qual posição da lista deseja consultar?');
@@ -30,15 +28,12 @@ frutas[2] = 'laranja';
 frutas[3] = 'melancia';
 frutas[4] = 'manga';
 
-
-
 function criaListaFrutas(){
   const containerFrutas = document.getElementById('containerFrutas');
    frutas.forEach(function(item,index) {
     containerFrutas.innerHTML += (index) +  ' - ' +item+'<br>'
   });    	 
 }
-
 
 function posicaoFrutas(){
 var indice = prompt('Qual posição da lista deseja consultar?');

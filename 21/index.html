@@ -48,7 +48,7 @@
             
             <h3>Popover</h3>
 
-            <button type="button" class="btn btn-lg btn-danger mt-4" data-bs-toggle="popover" title="Detalhes!!" data-bs-content="Breve detalhes aqui!" data-placement="right" data-trigger="focus">Detalhes</button>
+            <button type="button" class="btn btn-lg btn-danger mt-4" data-toggle="popover" title="Detalhes!!" data-content="Breve detalhes aqui!" data-placement="right" data-trigger="focus">Detalhes</button>
         
         </div>
 
@@ -77,7 +77,7 @@
 
         var popoverTriggerList=[].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
         var popoverList=popoverTriggerList.map(function(popoverTriggerEl){
-            return bootstrap.Popover(popoverTriggerEl)
+            return new bootstrap.Popover(popoverTriggerEl)
         })
     </script>
     
